@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bossa Bank — Projeto</title>
+<meta name="description" content="Bossa Bank — projeto do portfólio de Luan Roinner, Product Designer.">
+<meta property="og:title" content="Bossa Bank — Projeto">
+<meta property="og:description" content="Bossa Bank — projeto do portfólio de Luan Roinner, Product Designer.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+body{margin:0;background:#050708}
+a{color:#FFFFFF}a:hover{color:#39E9B9}
+.lr-root:not([data-lang="en"]) .en{display:none !important}
+.lr-root[data-lang="en"] .pt{display:none !important}
+.lr-lang{display:inline-flex;gap:2px;padding:4px;border:1px solid var(--lr-line);border-radius:999px}
+.lr-lang button{min-height:36px;min-width:44px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:inherit;font:600 13px/1 'Inter Tight',system-ui,sans-serif;letter-spacing:.08em;cursor:pointer}
+.lr-lang button[aria-pressed="true"]{background:var(--lr-ink);color:var(--lr-bg)}
+.lr-lang button:focus-visible{outline:2px solid var(--lr-ink);outline-offset:2px}
+@keyframes lrFloatA{0%{transform:translate(0,0) scale(1)}33%{transform:translate(80px,60px) scale(1.08)}66%{transform:translate(-40px,120px) scale(0.95)}100%{transform:translate(0,0) scale(1)}}
+@keyframes lrFloatB{0%{transform:translate(0,0) scale(1)}33%{transform:translate(-90px,70px) scale(1.1)}66%{transform:translate(50px,30px) scale(0.94)}100%{transform:translate(0,0) scale(1)}}
+.lr-orb-a{animation:lrFloatA 26s ease-in-out infinite}
+.lr-orb-b{animation:lrFloatB 32s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.lr-orb-a,.lr-orb-b{animation:none}}
+.lr-head{position:fixed;top:0;left:0;right:0;z-index:30;box-sizing:border-box;padding:18px clamp(12px,3vw,36px) 0;transition:padding .4s ease}
+.lr-head-in{box-sizing:border-box;max-width:1336px;margin:0 auto;padding:10px 10px 10px clamp(12px,1.6vw,22px);border-radius:28px;border:1px solid transparent;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;transition:background .4s ease,border-color .4s ease,box-shadow .4s ease,backdrop-filter .4s ease,-webkit-backdrop-filter .4s ease}
+.lr-root[data-scrolled="true"] .lr-head{padding-top:12px}
+.lr-root[data-scrolled="true"] .lr-head-in{background:var(--lr-glass);border-color:var(--lr-glass-line);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);box-shadow:0 12px 32px var(--lr-glass-shadow),inset 0 1px 0 rgba(255,255,255,0.1)}
+.lr-lang{transition:background .4s ease,border-color .4s ease,box-shadow .4s ease}
+.lr-root:not([data-scrolled="true"]) .lr-lang{background:var(--lr-glass-soft);border-color:var(--lr-glass-line);-webkit-backdrop-filter:blur(16px) saturate(160%);backdrop-filter:blur(16px) saturate(160%);box-shadow:0 8px 24px var(--lr-glass-shadow),inset 0 1px 0 rgba(255,255,255,0.2)}
+.lr-back{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--lr-line);border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;line-height:1}
+.lr-logo{text-decoration:none;font-family:'Unbounded',sans-serif;font-weight:800;font-size:18px;letter-spacing:-0.02em;line-height:1}
+.lr-head-right{display:flex;align-items:center;gap:16px}
+@media (max-width:640px){
+.lr-head-in{flex-wrap:nowrap;gap:8px;padding:8px 8px 8px 8px}
+.lr-back{padding:0;width:44px;justify-content:center;font-size:18px}
+.lr-back-txt{display:none}
+.lr-head-right{gap:12px}
+.lr-lang button{min-width:38px;padding:0 9px;min-height:34px}
+.lr-logo{padding-right:6px}
+}
+</style>
+<style>sc-if{display:contents}img,video{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}:root{--lr-spot:rgba(255,255,255,.16);--lr-spot-edge:rgba(255,255,255,.7)}.lr-spot{position:relative;isolation:isolate}.lr-spot::before,.lr-spot::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;opacity:0;transition:opacity .35s ease}.lr-spot::before{background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),var(--lr-spot),transparent 70%)}.lr-spot::after{padding:1px;background:radial-gradient(180px circle at var(--mx,50%) var(--my,50%),var(--lr-spot-edge),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}.lr-spot:hover::before,.lr-spot:hover::after{opacity:1}.lr-gal.lr-focus img,.lr-gal.lr-focus video{filter:grayscale(calc(1 - var(--p,0)));transition:filter .25s linear,transform .6s ease}.lr-gal.lr-focus a:hover img,.lr-gal.lr-focus a:hover video,.lr-gal.lr-focus a:focus-visible img,.lr-gal.lr-focus a:focus-visible video{filter:grayscale(0)}.lr-mag{transition:translate .5s cubic-bezier(.2,.8,.2,1)}.lr-mag.lr-mag-live{transition:translate .12s linear}@media (prefers-reduced-motion:reduce){.lr-spot::before,.lr-spot::after,.lr-mag{transition:none}}</style>
+</head>
+<body>
+<div id="page"></div>
+<template id="page-template">
+<div class="lr-root" ref="{{setRoot}}" data-lang="{{lang}}" data-scrolled="{{scrolled}}" style="position: relative; overflow: clip; background: #050708; color: #FFFFFF; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 17px; line-height: 1.55; --lr-ink: #FFFFFF; --lr-bg: #050708; --lr-line: rgba(255,255,255,0.25); --lr-glass: rgba(8,14,16,0.55); --lr-glass-soft: rgba(255,255,255,0.1); --lr-glass-line: rgba(255,255,255,0.18); --lr-glass-shadow: rgba(0,0,0,0.3)">
+<!-- orbes flutuantes com as cores da marca -->
+<div aria-hidden="true" class="lr-orb-a" style="position: absolute; top: -260px; left: -200px; width: 900px; height: 700px; border-radius: 50%; background: radial-gradient(closest-side, rgba(57,233,185,0.35) 0%, rgba(0,0,0,0) 100%); filter: blur(40px); pointer-events: none"></div>
+<div aria-hidden="true" class="lr-orb-b" style="position: absolute; top: -200px; right: -260px; width: 760px; height: 640px; border-radius: 50%; background: radial-gradient(closest-side, rgba(22,121,229,0.45) 0%, rgba(0,0,0,0) 100%); filter: blur(50px); pointer-events: none"></div>
+<div style="position: relative">
+
+
+<!-- NAV -->
+<div aria-hidden="true" style="height: 74px"></div>
+<header class="lr-head"><div class="lr-head-in">
+<a href="./" class="lr-back" aria-label="Voltar ao portfólio / Back to portfolio"><span aria-hidden="true">←</span><span class="lr-back-txt">&nbsp;<span class="pt">Voltar ao portfólio</span><span class="en">Back to portfolio</span></span></a>
+<div class="lr-head-right"><div class="lr-lang" role="group" aria-label="Idioma / Language"><button type="button" aria-pressed="{{ptOn}}" onClick="{{setPt}}" lang="pt-BR">PT</button><button type="button" aria-pressed="{{enOn}}" onClick="{{setEn}}" lang="en">EN</button></div><a href="./" class="lr-logo" aria-label="Luan Roinner — início">LR.</a></div>
+</div></header>
+
+<!-- HERO -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 96px 24px 56px">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px">
+<span style="padding: 7px 18px; border-radius: 999px; background: #39E9B9; color: #050708; font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em"><span class="pt">PROJETO</span><span class="en">PROJECT</span></span>
+<span style="padding: 7px 18px; border-radius: 999px; border: 1.5px solid #FFFFFF; font-family: 'Unbounded', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em">UX/UI · BRAND DESIGN</span>
+</div>
+<h1 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(26px, 8.3vw, 120px); line-height: 0.9; letter-spacing: -0.03em; white-space: nowrap">BOSSA BANK</h1>
+<div style="margin-top: 48px; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-end">
+<p style="margin: 0; flex: 1 1 420px; max-width: 620px; font-size: clamp(20px, 2vw, 26px); line-height: 1.4; font-weight: 300; color: #C9D1D3"><span class="pt">Marca e app para o banco das startups. Um banco digital — mas com pessoas por trás. <em style="font-style: italic; color: #39E9B9">Toda história deixa marcas, deixa digitais.</em></span><span class="en">Brand and app for the startups' bank. A digital bank — but with people behind it. <em style="font-style: italic; color: #39E9B9">Every story leaves marks, leaves fingerprints.</em></span></p>
+<dl style="flex: 1 1 360px; max-width: 520px; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px 32px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px">
+<div><dt style="font-size: 13px; letter-spacing: 0.2em; color: #8A979B"><span class="pt">CLIENTE</span><span class="en">CLIENT</span></dt><dd style="margin: 6px 0 0">Bossa Bank</dd></div>
+<div><dt style="font-size: 13px; letter-spacing: 0.2em; color: #8A979B"><span class="pt">ESCOPO</span><span class="en">SCOPE</span></dt><dd style="margin: 6px 0 0"><span class="pt">Conceito, logo, cores, app e cartões</span><span class="en">Concept, logo, colors, app and cards</span></dd></div>
+<div><dt style="font-size: 13px; letter-spacing: 0.2em; color: #8A979B"><span class="pt">PÚBLICO</span><span class="en">AUDIENCE</span></dt><dd style="margin: 6px 0 0"><span class="pt">Startups e empreendedores</span><span class="en">Startups and entrepreneurs</span></dd></div>
+<div><dt style="font-size: 13px; letter-spacing: 0.2em; color: #8A979B"><span class="pt">DESTAQUE</span><span class="en">HIGHLIGHT</span></dt><dd style="margin: 6px 0 0"><span class="pt">Paleta testada para daltonismo</span><span class="en">Color-blind-tested palette</span></dd></div>
+</dl>
+</div>
+</section>
+
+<!-- IMAGEM PRINCIPAL -->
+<section aria-label="Marca Bossa Bank" style="max-width: 1360px; margin: 0 auto; padding: 0 24px">
+<img src="assets/eed7d068760ae2c100f35041b78f01b9.jpg" alt="Logo Bossa Bank com o slogan O banco das startups sobre fundo de mar escuro" style="display: block; width: 100%; height: auto; border-radius: 16px">
+</section>
+
+<!-- CONCEITO -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 120px 24px 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px">
+<p style="margin: 0; flex: 0 0 220px; font-size: 13px; letter-spacing: 0.3em; color: #8A979B"><span class="pt">O CONCEITO</span><span class="en">THE CONCEPT</span></p>
+<div style="flex: 1 1 520px; min-width: 0; max-width: 820px">
+<h2 style="margin: 0 0 24px; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(28px, 3.4vw, 48px); line-height: 1.1; letter-spacing: -0.02em"><span class="pt">Apesar de um banco digital, sempre há pessoas por trás</span><span class="en">Even in a digital bank, there are always people behind it</span></h2>
+<p style="margin: 0; font-size: 19px; color: #C9D1D3"><span class="pt">E se há pessoas, há história — e toda história deixa marcas, deixa <strong style="color: #39E9B9">digitais</strong>. O símbolo nasce da impressão digital: as linhas formam ondas que lembram a bossa e desenham o “B” da marca. A ideia é que o banco deixe a sua digital na trajetória de cada startup.</span><span class="en">And where there are people, there is history — and every story leaves marks, leaves <strong style="color: #39E9B9">fingerprints</strong>. The symbol comes from a fingerprint: its lines form waves that evoke bossa and draw the brand's “B”. The idea is for the bank to leave its fingerprint on every startup's journey.</span></p>
+</div>
+</div>
+</section>
+
+<section aria-label="Narrativa da marca" style="max-width: 1360px; margin: 0 auto; padding: 40px 24px 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px">
+<img src="assets/811e2922b781feea23f272b7864631a3.jpg" alt="Impressão digital ao fundo com o texto Apesar de um banco digital, sempre há pessoas por trás" style="display: block; width: 100%; height: auto; border-radius: 16px">
+<img src="assets/a1918820f85dfd3601eb253ac30c199d.jpg" alt="Símbolo em verde-água sobre a digital: e se há pessoas, há história, e toda história deixa marcas, deixa digitais" style="display: block; width: 100%; height: auto; border-radius: 16px">
+<img src="assets/5ba85a0af15b26fc038768c10b09a789.jpg" alt="Símbolo B formado por linhas de digital: e agora vamos deixar nossa digital na sua trajetória" style="display: block; width: 100%; height: auto; border-radius: 16px">
+<img src="assets/bd567257fb25c429a3e8b994d4d9c210.jpg" alt="Logo final Bossa Bank sobre fundo preto com digital" style="display: block; width: 100%; height: auto; border-radius: 16px">
+</div>
+</section>
+
+<!-- CORES -->
+<section style="padding: 80px 0">
+<div style="background: #0E1A1F">
+<div style="max-width: 1360px; margin: 0 auto; padding: clamp(56px, 7vw, 96px) 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; margin-bottom: 48px">
+<p style="margin: 0; flex: 0 0 220px; font-size: 13px; letter-spacing: 0.3em; color: #39E9B9"><span class="pt">AS CORES</span><span class="en">THE COLORS</span></p>
+<div style="flex: 1 1 520px; min-width: 0; max-width: 760px">
+<h2 style="margin: 0 0 16px; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(28px, 3.4vw, 48px); line-height: 1.1; letter-spacing: -0.02em"><span class="pt">Uma paleta pensada para todo mundo</span><span class="en">A palette designed for everyone</span></h2>
+<p style="margin: 0; font-size: 19px; color: #C9D1D3"><span class="pt">Verde-água e dois azuis sobre preto e branco. Cada cor foi checada nas simulações de protanopia, deuteranopia e tritanopia, para manter contraste e leitura para pessoas daltônicas.</span><span class="en">Aqua green and two blues over black and white. Each color was checked in protanopia, deuteranopia and tritanopia simulations to keep contrast and legibility for color-blind people.</span></p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px">
+<div style="flex: 1 1 140px; padding: 56px 16px 14px; border-radius: 12px; background: #39E9B9; color: #050708; font-size: 14px; font-weight: 600">#39E9B9</div>
+<div style="flex: 1 1 140px; padding: 56px 16px 14px; border-radius: 12px; background: #1679E5; font-size: 14px; font-weight: 600">#1679E5</div>
+<div style="flex: 1 1 140px; padding: 56px 16px 14px; border-radius: 12px; background: #3862A1; font-size: 14px; font-weight: 600">#3862A1</div>
+<div style="flex: 1 1 140px; padding: 56px 16px 14px; border-radius: 12px; background: #000000; border: 1px solid rgba(255,255,255,0.2); font-size: 14px; font-weight: 600">#000000</div>
+<div style="flex: 1 1 140px; padding: 56px 16px 14px; border-radius: 12px; background: #FFFFFF; color: #050708; font-size: 14px; font-weight: 600">#FFFFFF</div>
+</div>
+<img src="assets/9f463ed0ab2426dc3bfb2866ed3edcd0.jpg" alt="Estudo de cores com espectro normal e simulações de protanopia, deuteranopia e tritanopia" style="display: block; width: 100%; height: auto; border-radius: 16px">
+</div>
+</div>
+</section>
+
+<!-- APP & CARTÕES -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 40px 24px 40px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 20px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(28px, 3.4vw, 48px); letter-spacing: -0.02em"><span class="pt">App e cartões</span><span class="en">App and cards</span></h2>
+<p style="margin: 0; max-width: 520px; font-weight: 300; color: #C9D1D3"><span class="pt">Interface do app com Pix, pagamentos, cobranças e transferências à mão, e cartões que levam a digital da marca.</span><span class="en">An app interface with Pix, payments, charges and transfers at hand, and cards that carry the brand's fingerprint.</span></p>
+</div>
+<img src="assets/674cfd38903d14bb54fa62f621454358.jpg" alt="Vários celulares em perspectiva com telas de login e home do app Bossa Bank" style="display: block; width: 100%; height: auto; border-radius: 16px; margin-bottom: 16px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; align-items: start">
+<img src="assets/79ad0192cb719d7d31945ba778d98ccf.jpg" alt="Cartões pretos Bossa Bank com o símbolo de digital em azul" style="display: block; width: 100%; height: auto; border-radius: 16px">
+<img src="assets/0d1e89584db4193c997e68b0288e52fd.jpg" alt="Celular com a home do app e cartão Bossa Bank: O banco das startups" style="display: block; width: 100%; height: auto; border-radius: 16px">
+</div>
+</section>
+
+<!-- FLUXO: SALDO QUE RENDE -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 80px 24px 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; margin-bottom: 48px">
+<p style="margin: 0; flex: 0 0 220px; font-size: 13px; letter-spacing: 0.3em; color: #39E9B9"><span class="pt">FLUXO</span><span class="en">FLOW</span></p>
+<div style="flex: 1 1 520px; min-width: 0; max-width: 760px">
+<h2 style="margin: 0 0 16px; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(28px, 3.4vw, 48px); line-height: 1.1; letter-spacing: -0.02em"><span class="pt">Saldo parado que rende</span><span class="en">Idle balance that earns</span></h2>
+<p style="margin: 0; font-size: 19px; color: #C9D1D3"><span class="pt">Um caminho curto para quem deixa dinheiro parado na conta: o app percebe o saldo disponível, mostra quanto ele poderia render, deixa simular o valor e confirma a aplicação em poucos toques — com resgate quando quiser.</span><span class="en">A short path for people who leave money sitting in their account: the app notices the available balance, shows how much it could earn, lets you simulate the amount and confirms the investment in a few taps — with withdrawals anytime.</span></p>
+</div>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px">
+<li><img src="assets/9306deccfcd876397f96acf22736fe12.png" alt="Home do app: saldo disponível de R$ 1.240 e lista de investimentos em startups" style="display: block; width: 100%; height: auto; border-radius: 28px; border: 1px solid rgba(255,255,255,0.12)"><p style="margin: 16px 0 0; font-size: 13px; letter-spacing: 0.2em; color: #39E9B9">01 · HOME</p><p style="margin: 6px 0 0; color: #C9D1D3"><span class="pt">Saldo e investimentos em startups lado a lado.</span><span class="en">Balance and startup investments side by side.</span></p></li>
+<li><img src="assets/a890269c3f94c69d40e572e7eb7fb617.png" alt="Modal: Seu saldo parado pode render, com botões Simular e Agora não" style="display: block; width: 100%; height: auto; border-radius: 28px; border: 1px solid rgba(255,255,255,0.12)"><p style="margin: 16px 0 0; font-size: 13px; letter-spacing: 0.2em; color: #39E9B9"><span class="pt">02 · CONVITE</span><span class="en">02 · PROMPT</span></p><p style="margin: 6px 0 0; color: #C9D1D3"><span class="pt">Um aviso claro, com a estimativa em reais e saída fácil.</span><span class="en">A clear prompt, with the estimate in reais and an easy way out.</span></p></li>
+<li><img src="assets/062e37d94c9a42dabbb33d36bbc499fa.png" alt="Tela de simulação com slider de valor e gráfico comparando saldo parado e aplicado em 12 meses" style="display: block; width: 100%; height: auto; border-radius: 28px; border: 1px solid rgba(255,255,255,0.12)"><p style="margin: 16px 0 0; font-size: 13px; letter-spacing: 0.2em; color: #39E9B9"><span class="pt">03 · SIMULAÇÃO</span><span class="en">03 · SIMULATION</span></p><p style="margin: 6px 0 0; color: #C9D1D3"><span class="pt">Escolha do valor e o comparativo parado × aplicado.</span><span class="en">Pick the amount and compare idle × invested.</span></p></li>
+<li><img src="assets/d48cbdc70a16ccaa4138b4c72e44b2ad.png" alt="Aplicação confirmada de R$ 1.240 em CDB Liquidez Diária" style="display: block; width: 100%; height: auto; border-radius: 28px; border: 1px solid rgba(255,255,255,0.12)"><p style="margin: 16px 0 0; font-size: 13px; letter-spacing: 0.2em; color: #39E9B9"><span class="pt">04 · CONFIRMAÇÃO</span><span class="en">04 · CONFIRMATION</span></p><p style="margin: 6px 0 0; color: #C9D1D3"><span class="pt">Resumo do produto, origem e resgate.</span><span class="en">Summary of product, source and withdrawal.</span></p></li>
+</ol>
+</section>
+
+<!-- PRÓXIMO -->
+<footer style="max-width: 1360px; margin: 0 auto; padding: 120px 24px 64px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 32px">
+<a href="./" style="display: inline-flex; align-items: center; min-height: 44px; padding: 14px 26px; background: #39E9B9; color: #050708; text-decoration: none; font-weight: 500; border-radius: 999px"><span class="pt">← Ver todos os trabalhos</span><span class="en">← See all work</span></a>
+<a href="https://www.behance.net/gallery/144546789/BOSSA-BANK-UXUI-AND-BRAND-DESIGN" style="font-size: 15px; text-underline-offset: 4px"><span class="pt">Ver no Behance ↗</span><span class="en">View on Behance ↗</span></a>
+</div>
+</footer>
+
+</div>
+</div>
+</template>
+<script src="runtime.js"></script>
+<script src="js/bossa-bank.js"></script>
+</body>
+</html>

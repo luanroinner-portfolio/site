@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luan Roinner — Product Designer</title>
+<meta name="description" content="Luan Roinner — Product Designer em São Paulo. UX/UI, produto e direção de arte.">
+<meta property="og:title" content="Luan Roinner — Product Designer">
+<meta property="og:description" content="Luan Roinner — Product Designer em São Paulo. UX/UI, produto e direção de arte.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+body{margin:0;background:#0B0B0D}
+a{color:#EDEDF2}a:hover{color:#C9BEFF}
+@keyframes lrSpin{to{transform:rotate(360deg)}}
+#sobre,#projetos,#contato{scroll-margin-top:88px}
+.lr-ol{filter:url(#lrOutline)}
+.lr-gal a{display:block;break-inside:avoid;margin-bottom:16px;border-radius:12px;overflow:hidden}
+.lr-gal img{display:block;width:100%;height:auto;filter:grayscale(1);transform:scale(1);transition:filter .5s ease,transform .6s ease}
+.lr-gal a:hover img,.lr-gal a:focus-visible img{filter:grayscale(0)}
+.lr-gal video{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:45% 62%;filter:grayscale(1);transform:scale(1);transition:filter .5s ease,transform .6s ease;background:#14141A}
+.lr-gal a:hover video,.lr-gal a:focus-visible video{filter:grayscale(0)}
+.lr-gal a:focus-visible{outline:2px solid #C9BEFF;outline-offset:3px}
+.lr-gal-feat{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px}
+.lr-gal-feat a{margin-bottom:0}
+.lr-gal video.lr-feat-v{aspect-ratio:1120/700;object-position:50% 50%;height:100%}
+.lr-gal-feat a:last-child{position:relative}
+.lr-gal video.lr-feat-b{position:absolute;inset:0;height:100%;aspect-ratio:auto}
+@media (max-width:760px){.lr-gal-feat{grid-template-columns:1fr}.lr-gal video.lr-feat-b{position:static;aspect-ratio:4/5}}
+.lr-gal-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;column-gap:16px}
+.lr-gal-top img.lr-sq{aspect-ratio:92/100;object-fit:cover}
+@media (max-width:760px){.lr-gal-top{grid-template-columns:1fr 1fr 1fr}.lr-gal-top a:first-child{grid-column:1/-1}.lr-gal-top img.lr-sq{aspect-ratio:1/1}}
+.lr-gal img.lr-zoom{transform:scale(1.4);transform-origin:50% 52%}
+.lr-gal img.lr-zoom-b{transform:scale(1.6) translate(9%,18%)}
+@keyframes lrOrbMA{0%,100%{transform:translate(0,200px) scale(1)}25%{transform:translate(90px,380px) scale(1.1)}50%{transform:translate(-40px,120px) scale(.92)}75%{transform:translate(60px,300px) scale(1.12)}}
+@keyframes lrOrbMB{0%,100%{transform:translate(0,220px) scale(1)}25%{transform:translate(-80px,90px) scale(1.12)}50%{transform:translate(40px,360px) scale(.94)}75%{transform:translate(-50px,160px) scale(1.08)}}
+@media (hover: none), (pointer: coarse){.lr-orbA,.lr-orbB{filter:none !important}.lr-orbA{animation:lrOrbMA 26s ease-in-out infinite;will-change:transform;background:radial-gradient(closest-side,rgba(107,61,245,1) 0%,rgba(107,61,245,.88) 22%,rgba(107,61,245,.62) 45%,rgba(107,61,245,.32) 65%,rgba(107,61,245,.12) 82%,rgba(107,61,245,0) 100%) !important}.lr-orbB{animation:lrOrbMB 30s ease-in-out infinite;will-change:transform;background:radial-gradient(closest-side,rgba(91,61,245,1) 0%,rgba(61,43,217,.86) 22%,rgba(61,43,217,.6) 45%,rgba(50,43,217,.3) 65%,rgba(43,43,217,.1) 82%,rgba(43,43,217,0) 100%) !important}}
+@media (max-width: 600px){.lr-hudlab{display:none}}
+@supports (height: 100svh){.lr-bantrack{height:calc(max(560px, min(100svh, 962px)) + 720px) !important}.lr-banner{height:min(100svh, 962px) !important}}
+@media (hover: none) and (prefers-reduced-motion: reduce), (pointer: coarse) and (prefers-reduced-motion: reduce){.lr-orbA,.lr-orbB{animation:none}}
+@keyframes lrOrbA{0%{transform:translate(0,0) scale(1);border-radius:50% 46% 54% 50%}20%{transform:translate(14%,22%) scale(1.12);border-radius:42% 58% 48% 52%}40%{transform:translate(-4%,46%) scale(0.94);border-radius:56% 44% 58% 42%}60%{transform:translate(12%,30%) scale(1.18);border-radius:48% 52% 40% 60%}80%{transform:translate(-8%,10%) scale(0.98);border-radius:58% 42% 52% 48%}100%{transform:translate(6%,40%) scale(1.06);border-radius:50% 46% 54% 50%}}
+@keyframes lrOrbB{0%{transform:translate(0,38%) scale(1);border-radius:48% 52% 50% 50%}20%{transform:translate(-14%,12%) scale(1.15);border-radius:56% 44% 46% 54%}40%{transform:translate(4%,-6%) scale(0.92);border-radius:44% 56% 58% 42%}60%{transform:translate(-10%,26%) scale(1.1);border-radius:52% 48% 42% 58%}80%{transform:translate(8%,48%) scale(0.96);border-radius:46% 54% 54% 46%}100%{transform:translate(-4%,20%) scale(1.08);border-radius:48% 52% 50% 50%}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+.lr-root:not([data-lang="en"]) .en{display:none !important}
+.lr-root[data-lang="en"] .pt{display:none !important}
+.lr-lang{display:inline-flex;gap:2px;padding:4px;border:1px solid var(--lr-line);border-radius:999px}
+.lr-lang button{min-height:36px;min-width:44px;padding:0 12px;border:0;border-radius:999px;background:transparent;color:inherit;font:600 13px/1 'Inter Tight',system-ui,sans-serif;letter-spacing:.08em;cursor:pointer}
+.lr-lang button[aria-pressed="true"]{background:var(--lr-ink);color:var(--lr-bg)}
+.lr-lang button:focus-visible{outline:2px solid var(--lr-ink);outline-offset:2px}
+@media (max-width:640px){
+.lr-hbar{flex-wrap:nowrap !important;gap:8px !important;padding:8px 8px 8px 14px !important}
+.lr-hbar > div{gap:10px !important}
+.lr-hlink{display:none !important}
+.lr-hcta{padding:9px 16px !important;font-size:14px !important;white-space:nowrap}
+.lr-lang button{min-width:38px;padding:0 9px;min-height:34px}
+}
+</style>
+<style>sc-if{display:contents}img,video{-webkit-user-drag:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}:root{--lr-spot:rgba(255,255,255,.16);--lr-spot-edge:rgba(255,255,255,.7)}.lr-spot{position:relative;isolation:isolate}.lr-spot::before,.lr-spot::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;opacity:0;transition:opacity .35s ease}.lr-spot::before{background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),var(--lr-spot),transparent 70%)}.lr-spot::after{padding:1px;background:radial-gradient(180px circle at var(--mx,50%) var(--my,50%),var(--lr-spot-edge),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}.lr-spot:hover::before,.lr-spot:hover::after{opacity:1}.lr-gal.lr-focus img,.lr-gal.lr-focus video{filter:grayscale(calc(1 - var(--p,0)));transition:filter .25s linear,transform .6s ease}.lr-gal.lr-focus a:hover img,.lr-gal.lr-focus a:hover video,.lr-gal.lr-focus a:focus-visible img,.lr-gal.lr-focus a:focus-visible video{filter:grayscale(0)}.lr-mag{transition:translate .5s cubic-bezier(.2,.8,.2,1)}.lr-mag.lr-mag-live{transition:translate .12s linear}@media (prefers-reduced-motion:reduce){.lr-spot::before,.lr-spot::after,.lr-mag{transition:none}}</style>
+</head>
+<body>
+<div id="page"></div>
+<template id="page-template">
+<div class="lr-root" data-lang="{{lang}}" style="position: relative; overflow: clip; background: #0B0B0D; color: #EDEDF2; font-family: 'Inter Tight', system-ui, sans-serif; font-size: 17px; line-height: 1.55; --lr-ink: #EDEDF2; --lr-bg: #0B0B0D; --lr-line: rgba(237,237,242,0.3)">
+
+<!-- glow + grain -->
+<div aria-hidden="true" style="position: absolute; top: -220px; left: 18%; width: 1100px; height: 760px; border-radius: 50%; background: radial-gradient(closest-side, {{accent}} 0%, #2B2BD9 40%, rgba(11,11,13,0) 100%); opacity: 0.7; filter: blur(50px); pointer-events: none"></div>
+
+
+<div style="position: relative">
+
+<!-- NAV -->
+<header class="lr-hhead" style="position: fixed; top: 0; left: 0; right: 0; z-index: 30; box-sizing: border-box; padding: {{navTop}} clamp(12px, 3vw, 36px) 0; transition: padding 0.4s ease">
+<div class="lr-hbar" style="box-sizing: border-box; max-width: 1336px; margin: 0 auto; padding: 10px 10px 10px clamp(12px, 1.6vw, 22px); border-radius: 28px; border: 1px solid {{navLine}}; background: {{navBg}}; -webkit-backdrop-filter: {{navBlur}}; backdrop-filter: {{navBlur}}; box-shadow: {{navShadow}}; transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease, -webkit-backdrop-filter 0.4s ease; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 16px"><a href="#topo" style="text-decoration: none; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: -0.02em">LR<span style="color: #EDEDF2">.</span></a><div class="lr-lang" role="group" aria-label="Idioma / Language" style="background: {{langBg}}; border-color: {{langLine}}; -webkit-backdrop-filter: {{topBlur}}; backdrop-filter: {{topBlur}}; box-shadow: {{topShadow}}; transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease"><button type="button" aria-pressed="{{ptOn}}" onClick="{{setPt}}" lang="pt-BR">PT</button><button type="button" aria-pressed="{{enOn}}" onClick="{{setEn}}" lang="en">EN</button></div></div>
+<nav class="lr-hnav" aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px"><a href="#projetos" class="lr-hlink" style="padding: 10px 14px; text-decoration: none; font-size: 16px"><span class="pt">Projetos</span><span class="en">Work</span></a><a href="#sobre" class="lr-hlink" style="padding: 10px 14px; text-decoration: none; font-size: 16px"><span class="pt">Sobre</span><span class="en">About</span></a><a href="#contato" class="lr-hcta" style="padding: 11px 21px; text-decoration: none; font-size: 16px; font-weight: 500; background: {{ctaBg}}; color: {{ctaFg}}; border: 1px solid {{ctaLine}}; -webkit-backdrop-filter: {{topBlur}}; backdrop-filter: {{topBlur}}; box-shadow: {{topShadow}}; border-radius: 999px; transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease"><span class="pt">Vamos conversar</span><span class="en">Let's talk</span></a></nav>
+</div>
+
+</header>
+
+<!-- BANNER em tela cheia -->
+<div class="lr-bantrack" ref="{{setTrack}}" style="position: relative; height: calc(max(560px, min(100vh, 962px)) + 720px)">
+<section id="topo" class="lr-banner" aria-label="Banner" ref="{{setBanner}}" onPointerMove="{{onMove}}" onPointerLeave="{{onLeave}}" style="position: sticky; top: 0; width: 100%; margin-top: 0; aspect-ratio: 16 / 9; min-height: 560px; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; background: #0B0B0D; height: min(100vh, 962px); cursor: crosshair">
+<img src="assets/158438a85ed9943e8bc9e6a48cbb57dd.jpg" alt="Retrato de Luan Roinner" style="position: absolute; top: 104px; left: 0; right: 0; bottom: 0; width: 100%; height: calc(100% - 104px); object-fit: cover; object-position: 50% 30%; filter: grayscale(1) contrast(1.08) brightness({{photoBright}}); transition: filter 0.6s ease">
+<img src="assets/87cf7940d370c8e86fba7ce706a9202f.jpg" alt="" aria-hidden="true" style="position: absolute; top: 104px; left: 0; right: 0; bottom: 0; width: 100%; height: calc(100% - 104px); object-fit: cover; object-position: 50% 30%; -webkit-mask-image: {{lensMask}}; mask-image: {{lensMask}}">
+<!-- HUD da lente raio-X -->
+<div aria-hidden="true" style="position: absolute; left: {{lx}}px; top: {{lyAbs}}px; width: {{ld}}px; height: {{ld}}px; transform: translate(-50%, -50%); opacity: {{hudOp}}; pointer-events: none">
+<div style="position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(255,255,255,0.85); box-shadow: 0 0 36px 2px rgba(255,255,255,0.22), inset 0 0 36px 2px rgba(255,255,255,0.12)"></div>
+<div style="position: absolute; inset: -14px; border-radius: 50%; border: 1px dashed rgba(255,255,255,0.35); animation: lrSpin 22s linear infinite; will-change: transform"></div>
+<div style="position: absolute; left: 50%; top: -30px; width: 1px; height: 12px; background: rgba(255,255,255,0.8)"></div>
+<div style="position: absolute; left: 50%; top: calc(100% + 18px); width: 1px; height: 12px; background: rgba(255,255,255,0.8)"></div>
+<div style="position: absolute; top: 50%; left: -30px; width: 12px; height: 1px; background: rgba(255,255,255,0.8)"></div>
+<div style="position: absolute; top: 50%; left: calc(100% + 18px); width: 12px; height: 1px; background: rgba(255,255,255,0.8)"></div>
+<div style="position: absolute; left: calc(50% - 6px); top: 50%; width: 12px; height: 1px; background: rgba(255,255,255,0.55)"></div>
+<div style="position: absolute; top: calc(50% - 6px); left: 50%; width: 1px; height: 12px; background: rgba(255,255,255,0.55)"></div>
+<div class="lr-hudlab" style="position: absolute; left: {{labLeft}}; top: 50%; transform: translateY(-50%); width: 176px; box-sizing: border-box; padding: 8px 12px; border-radius: 8px; background: rgba(11,11,13,0.7); border: 1px solid rgba(255,255,255,0.18); font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 11px; line-height: 1.6; letter-spacing: 0.12em; color: #EDEDF2; white-space: nowrap">
+<div><span class="pt">RAIO-X · MALHA 3D</span><span class="en">X-RAY · 3D MESH</span></div>
+<div style="color: #B5B5C2">X {{coordX}} · Y {{coordY}}</div>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,11,13,0.9) 0%, rgba(11,11,13,0.6) 22%, rgba(11,11,13,0) 46%, rgba(11,11,13,0) 52%, rgba(11,11,13,0.55) 72%, #0B0B0D 100%); opacity: {{shadeA}}"></div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 0; height: 344px; background: linear-gradient(180deg, #0B0B0D 0%, #0B0B0D 30%, rgba(11,11,13,0.55) 62%, rgba(11,11,13,0) 100%); pointer-events: none"></div>
+<!-- orbes roxos esfumaçados: descem até o meio e se dissolvem no degradê preto da base -->
+<div aria-hidden="true" style="position: absolute; inset: 0; mix-blend-mode: screen; pointer-events: none; -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 50%, rgba(0,0,0,0.5) 68%, transparent 86%); mask-image: linear-gradient(180deg, #000 0%, #000 50%, rgba(0,0,0,0.5) 68%, transparent 86%)">
+<div style="position: absolute; left: -380px; top: -340px; width: 760px; height: 760px">
+<div class="lr-orbA" style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(closest-side, {{accent}} 0%, rgba(107,61,245,0.8) 40%, rgba(107,61,245,0) 100%); filter: blur(48px); opacity: 0.95; transform: translate({{oaX}}px, {{oaY}}px) scale({{oaS}})"></div>
+</div>
+<div style="position: absolute; right: -360px; top: -320px; width: 720px; height: 720px">
+<div class="lr-orbB" style="position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(closest-side, #5B3DF5 0%, rgba(61,43,217,0.8) 40%, rgba(43,43,217,0) 100%); filter: blur(56px); opacity: 0.92; transform: translate({{obX}}px, {{obY}}px) scale({{obS}})"></div>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 42%; background: linear-gradient(180deg, rgba(11,11,13,0) 0%, rgba(11,11,13,0.55) 45%, rgba(11,11,13,0.9) 78%, #0B0B0D 100%); pointer-events: none"></div>
+<svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0; opacity: 0.32; mix-blend-mode: overlay"><filter id="bannerGrain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"></feTurbulence><feColorMatrix type="saturate" values="0"></feColorMatrix></filter><rect width="100%" height="100%" filter="url(#bannerGrain)"></rect></svg>
+<div style="position: absolute; top: clamp(104px, 10vw, 140px); left: 0; right: 0; max-width: 1360px; margin: 0 auto; box-sizing: border-box; padding: 0 clamp(24px, 4vw, 48px)">
+<svg width="0" height="0" aria-hidden="true" style="position: absolute"><filter id="lrOutline" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="grow"></feMorphology><feComposite in="grow" in2="SourceAlpha" operator="out" result="ring"></feComposite><feFlood flood-color="#EDEDF2"></feFlood><feComposite in2="ring" operator="in"></feComposite></filter></svg>
+<p style="position: relative; margin: 0; text-align: start; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(40px, 6.5vw, 96px); line-height: 0.92; letter-spacing: -0.01em; color: #EDEDF2"><span style="display: block; opacity: {{fillA}}">LUAN<br>ROINNER</span><span class="lr-ol" aria-hidden="true" style="position: absolute; inset: 0; opacity: {{olA}}">LUAN<br>ROINNER</span></p>
+</div>
+<div style="position: relative; width: 100%; max-width: 1360px; margin: 0 auto; box-sizing: border-box; padding: 0 clamp(24px, 4vw, 48px) clamp(32px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-wrap: wrap; gap: 10px"><span style="padding: 7px 18px; border-radius: 999px; background: rgb(228, 228, 236); color: rgb(22, 22, 58); font-family: Unbounded, sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em">SÃO PAULO</span><span style="padding: 7px 18px; border-radius: 999px; border: 1.5px solid rgb(228, 228, 236); font-family: Unbounded, sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em">UX/UI</span><span style="padding: 7px 18px; border-radius: 999px; border: 1.5px solid rgb(228, 228, 236); font-family: Unbounded, sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.16em"><span class="pt">PRODUTO</span><span class="en">PRODUCT</span></span></div>
+<p style="position: relative; margin: 0 0 0 auto; text-align: right; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(40px, 6.5vw, 96px); line-height: 0.92; letter-spacing: -0.01em; color: #EDEDF2"><span style="display: block; opacity: {{fillA}}">PRODUCT<br>DESIGNER</span><span class="lr-ol" aria-hidden="true" style="position: absolute; inset: 0; opacity: {{olA}}">PRODUCT<br>DESIGNER</span></p>
+</div>
+</section>
+</div>
+
+<!-- HERO: statement escalonado -->
+<section style="max-width: 1360px; margin: 0 auto; padding: 0 24px">
+
+</section>
+
+<!-- MÍDIA DESTAQUE -->
+<section aria-label="Destaque" style="max-width: 1360px; margin: 0 auto; padding: 0 24px">
+
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" style="max-width: 1360px; margin: 0 auto; padding: 140px 24px 120px">
+<div style="display: flex; flex-wrap: wrap; border: 1px solid rgba(237,237,242,0.2); border-radius: 16px; overflow: hidden">
+<div style="position: relative; flex: 2 1 420px; min-width: 0; min-height: 420px; overflow: hidden; background: #121218; border-right: 1px solid rgba(237,237,242,0.2); width: 480px">
+<img src="assets/059354874c46580ce8d8ffc154cd8cfe.jpg" alt="Luan Roinner sorrindo de capacete e óculos escuros num teleférico de esqui, com montanhas nevadas ao fundo" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 42% 42%; filter: grayscale(1) contrast(1.05); transform: scaleX(-1)">
+</div>
+<div style="flex: 3 1 520px; min-width: 0; padding: clamp(28px, 4vw, 56px); width: 762px">
+<p style="margin: 0 0 24px; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.25; letter-spacing: -0.02em; font-weight: 400"><span class="pt">Penso em narrativa visual e persuasão com a mesma naturalidade com que desenho jornadas, testo hipóteses e <em style="font-weight: 300; color: rgb(201, 190, 255)">leio dados.</em></span><span class="en">I think about visual storytelling and persuasion as naturally as I map journeys, test hypotheses and <em style="font-weight: 300; color: rgb(201, 190, 255)">read data.</em></span></p>
+<div style="margin: 0 0 16px; font-weight: 300; color: #C4C4CF"><p class="pt" style="margin: 0 0 16px">Nasci em Caicó, no interior do Rio Grande do Norte, e me mudei para São Paulo em 2021. Minha mãe trabalhou com moda a vida inteira, e eu cresci no meio disso, folheando revistas e ficando fascinado pelos editoriais. Foi ali que o design me pegou, antes mesmo de eu saber que aquilo tinha nome. Os games vieram junto desde pequeno e, anos depois, virou parte do meu trabalho e até hoje é uma das minhas grandes paixões.</p><p class="en" style="margin: 0 0 16px">I was born in Caicó, in the countryside of Rio Grande do Norte, Brazil, and moved to São Paulo in 2021. My mother worked in fashion her whole life, and I grew up surrounded by it, flipping through magazines and fascinated by the editorials. That's where design got me, before I even knew it had a name. Games came along when I was a kid too and, years later, became part of my work — they're still one of my great passions.</p>
+</div>
+<div style="margin: 0 0 16px; font-weight: 300; color: #C4C4CF"><p class="pt" style="margin: 0 0 16px">Comecei na direção de arte e na criação publicitária, em agências e times de marca, e depois migrei para UX/UI e Product Design. São mais de 8 anos conectando as duas pontas: conceito e identidade visual de um lado, e pesquisa, dados e produto do outro. Passei por games, finanças, varejo e setor automotivo, criando de identidades visuais e campanhas a produtos digitais completos, com pesquisa com usuários, personas, testes de usabilidade e testes A/B.</p><p class="en" style="margin: 0 0 16px">I started in art direction and advertising, at agencies and brand teams, and then moved into UX/UI and Product Design. That's more than 8 years connecting both ends: concept and visual identity on one side, research, data and product on the other. I've worked in games, finance, retail and automotive, creating everything from visual identities and campaigns to complete digital products, with user research, personas, usability testing and A/B testing.</p>
+<p class="pt" style="margin: 0 0 16px">Hoje atuo do discovery ao delivery em times ágeis, transformando objetivos de negócio em interfaces simples e consistentes com o Design System. Uso GenAI no dia a dia para acelerar pesquisa e prototipação, e levo comigo repertório de motion, Adobe e Figma.</p><p class="en" style="margin: 0 0 16px">Today I work from discovery to delivery in agile teams, turning business goals into simple interfaces consistent with the Design System. I use GenAI every day to speed up research and prototyping, and I bring a background in motion, Adobe and Figma.</p></div>
+<div style="margin: 0 0 40px; font-weight: 300; color: #C4C4CF"><p class="pt" style="margin: 0 0 16px">Fora do design, sou apaixonado por esqui, viagem, gastronomia e música eletrônica, e vivo tentando juntar essas quatro paixões. Adoro trabalhar junto, trocar ideias e conhecer gente nova. Se quiser bater um papo, é só chamar.</p><p class="en" style="margin: 0 0 16px">Outside design, I'm passionate about skiing, travel, food and electronic music, and I'm always trying to bring those four passions together. I love working with others, trading ideas and meeting new people. If you'd like to chat, just reach out.</p>
+</div>
+<p style="margin: 0 0 14px; font-size: 14px; color: #B5B5C2"><span class="pt">Competências</span><span class="en">Skills</span></p>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); column-gap: 32px; border-top: 1px solid rgba(237,237,242,0.2)">
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Jornadas, fluxos e arquitetura de informação</span><span class="en">Journeys, flows and information architecture</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Wireframes e protótipos, da baixa à alta fidelidade</span><span class="en">Wireframes and prototypes, from low to high fidelity</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">UX Research, personas e testes de usabilidade</span><span class="en">UX research, personas and usability testing</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Design System e consistência visual.</span><span class="en">Design Systems and visual consistency</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Discovery contínuo e decisões guiadas por dados</span><span class="en">Continuous discovery and data-informed decisions</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Colaboração com PMs, devs e stakeholders</span><span class="en">Collaboration with PMs, developers and stakeholders</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Direção de arte e narrativa visual</span><span class="en">Art direction and visual storytelling</span></li>
+<li style="padding: 12px 0; border-bottom: 1px solid rgba(237,237,242,0.2)"><span class="pt">Branding e identidade visual</span><span class="en">Branding and visual identity</span></li>
+</ul>
+</div>
+</div>
+
+<!-- trajetória compacta -->
+<div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); border: 1px solid rgba(237,237,242,0.2); border-radius: 16px; overflow: hidden">
+<div style="padding: 28px; border-right: 1px solid rgba(237,237,242,0.2)"><div style="font-size: 14px; color: #B5B5C2"><span class="pt">2025 — atual</span><span class="en">2025 — present</span></div><div style="margin-top: 8px; font-size: 20px; font-weight: 500">Cactus Gaming</div><div style="font-weight: 300; color: #C4C4CF">Product Designer</div></div>
+<div style="padding: 28px; border-right: 1px solid rgba(237,237,242,0.2)"><div style="font-size: 14px; color: #B5B5C2">2024 — 2025</div><div style="margin-top: 8px; font-size: 20px; font-weight: 500">Cactus Gaming</div><div style="font-weight: 300; color: #C4C4CF">UX/UI Marketing Designer</div></div>
+<div style="padding: 28px; border-right: 1px solid rgba(237,237,242,0.2)"><div style="font-size: 14px; color: #B5B5C2">2022 — 2025</div><div style="margin-top: 8px; font-size: 20px; font-weight: 500">Eagle Live Marketing e Eventos</div><div style="font-weight: 300; color: #C4C4CF">Art Director</div></div>
+<div style="padding: 28px"><div style="font-size: 14px; color: #B5B5C2">2021 — 2022</div><div style="margin-top: 8px; font-size: 20px; font-weight: 500">Bossanova Investimentos</div><div style="font-weight: 300; color: #C4C4CF">UX/UI Designer</div></div>
+</div>
+</section>
+
+<!-- TRABALHOS: Galeria (padrão) ou Projetos -->
+<section id="projetos" style="max-width: 1360px; margin: 0 auto; padding: 20px 24px 140px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 40px">
+<h2 style="margin: 0; font-family: 'Unbounded', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.02em">WORK</h2>
+<div role="tablist" aria-label="Modo de visualização" style="display: flex; gap: 6px; padding: 6px; border: 1px solid rgba(237,237,242,0.2); border-radius: 999px">
+<button type="button" role="tab" aria-selected="{{galSel}}" onClick="{{showGal}}" style="min-height: 44px; padding: 10px 22px; border: 0; border-radius: 999px; font-family: 'Inter Tight', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; background: {{galBg}}; color: {{galFg}}"><span class="pt">Galeria</span><span class="en">Gallery</span></button>
+<button type="button" role="tab" aria-selected="{{projSel}}" onClick="{{showProj}}" style="min-height: 44px; padding: 10px 22px; border: 0; border-radius: 999px; font-family: 'Inter Tight', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; background: {{projBg}}; color: {{projFg}}"><span class="pt">Projetos</span><span class="en">Projects</span></button>
+</div>
+</div>
+<sc-if value="{{isGaleria}}" hint-placeholder-val="{{true}}">
+<div role="tabpanel" aria-label="Galeria" class="lr-gal">
+<div class="lr-gal-feat">
+<a href="cactus-gaming#backoffice" aria-label="Ver o redesign do Backoffice da Cactus"><video class="lr-feat-v" src="assets/e32cca2bfce4c686822f000f8de8947d.mp4" poster="assets/6d49227d1aa7a68daa04edde1f921839.jpg" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" aria-label="Tela de login do novo backoffice da Cactus"></video></a>
+<a href="cactus-gaming" aria-label="Ver projeto Cactus Gaming"><video class="lr-feat-b" src="assets/5e30c92d7a0d111ee4682a86adbce3cf.mp4" poster="assets/44050e196028f6db802713ad374b3025.jpg" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" aria-label="Vídeo do balão da Cactus sendo inflado em evento"></video></a>
+</div>
+<div class="lr-gal-top">
+<a href="bossa-bank" aria-label="Ver projeto Bossa Bank"><img src="assets/62614c62f6bc75b89ac66adb84141482.jpg" alt="Fluxo Saldo parado que rende no app Bossa Bank: home, convite, simulação e confirmação"></a>
+<a href="bossa-bank" aria-label="Ver projeto Bossa Bank"><img src="assets/674cfd38903d14bb54fa62f621454358.jpg" alt="Celulares em perspectiva com telas do app Bossa Bank" class="lr-sq"></a>
+<a href="bossa-bank" aria-label="Ver projeto Bossa Bank"><img src="assets/0d1e89584db4193c997e68b0288e52fd.jpg" alt="Celular com o app e cartão Bossa Bank" class="lr-sq"></a>
+<a href="bossa-bank" aria-label="Ver projeto Bossa Bank"><img src="assets/79ad0192cb719d7d31945ba778d98ccf.jpg" alt="Cartões pretos Bossa Bank com o símbolo de digital" class="lr-sq"></a>
+</div>
+<div style="columns: 3 300px; column-gap: 16px">
+<a href="brilhantina" aria-label="Ver projeto Brilhantina"><img src="assets/58219b77cea7f1cb0e2761b2a50b44d8.jpg" alt="Mosaico de celulares com telas do app Brilhantina"></a>
+<a href="cactus-gaming" aria-label="Ver projeto Cactus Gaming"><img class="lr-zoom" src="assets/9a74a74e6a5e089be45a10d9acb61f98.jpg" alt="Folder Cactus, capa Copa do Mundo"></a>
+<a href="bb-imports" aria-label="Ver projeto B&amp;B imports"><img src="assets/2ef6c6a2c0c547732940102f2580ee3a.jpg" alt="Garrafa com rótulo B&amp;B imports"></a>
+<a href="bb-imports" aria-label="Ver projeto B&amp;B imports"><img src="assets/4649f129f43ff7b1b4ebeeb9ea895eb6.jpg" alt="Cartão com monograma B&amp;B"></a>
+<a href="instituto-conecta-cactus" aria-label="Ver projeto Instituto Conecta Cactus"><img src="assets/56788e6d42bf61f2b115566145d86cb7.jpg" alt="Logo do Instituto Conecta Cactus sobre fundo amarelo"></a>
+<a href="instituto-conecta-cactus" aria-label="Ver projeto Instituto Conecta Cactus"><img src="assets/2b1fbf5993dd2a5bd588bc4b2a687932.jpg" alt="Fachada de concreto com a marca Instituto Conecta Cactus"></a>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{isProjetos}}" hint-placeholder-val="{{false}}">
+<div role="tabpanel" aria-label="Projetos">
+<div style="display: flex; justify-content: space-between; gap: 16px; font-size: 13px; letter-spacing: 0.3em; color: #C4C4CF; margin-bottom: 32px">
+<span><span class="pt">PROJETOS</span><span class="en">PROJECTS</span></span><span><span class="pt">ESCOPO</span><span class="en">SCOPE</span></span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 56px 24px">
+<a href="cactus-gaming" style="text-decoration: none; display: block">
+<img src="assets/7b2b2c2271bc8d214b1b01027a7b7ef7.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; background: #1C1C24">
+<div style="margin-top: 16px; font-size: 20px; font-weight: 500">Cactus Gaming</div>
+<div style="font-size: 15px; color: #B5B5C2">UX/UI · Marketing · 2026<br></div>
+</a>
+
+<a href="bossa-bank" style="text-decoration: none; display: block">
+<img src="assets/eed7d068760ae2c100f35041b78f01b9.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 100% 50%; border-radius: 12px; background: #1C1C24">
+<div style="margin-top: 16px; font-size: 20px; font-weight: 500">Bossa Bank</div>
+<div style="font-size: 15px; color: #B5B5C2">UX/UI · Brand Design · 2022</div>
+</a>
+
+<a href="brilhantina" style="text-decoration: none; display: block">
+<img src="assets/58219b77cea7f1cb0e2761b2a50b44d8.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; background: #1C1C24">
+<div style="margin-top: 16px; font-size: 20px; font-weight: 500">Brilhantina</div>
+<div style="font-size: 15px; color: #B5B5C2"><span class="pt">Product Design · UX/UI · Projeto acadêmico</span><span class="en">Product Design · UX/UI · Academic project</span></div>
+</a>
+
+<a href="instituto-conecta-cactus" style="text-decoration: none; display: block">
+<img src="assets/56788e6d42bf61f2b115566145d86cb7.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; background: #1C1C24">
+<div style="margin-top: 16px; font-size: 20px; font-weight: 500">Instituto Conecta Cactus</div>
+<div style="font-size: 15px; color: #B5B5C2"><span class="pt">Brand Design · Identidade visual</span><span class="en">Brand Design · Visual identity</span></div>
+</a>
+
+<a href="bb-imports" style="text-decoration: none; display: block">
+<img src="assets/2ef6c6a2c0c547732940102f2580ee3a.jpg" alt="" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 50%; border-radius: 12px; background: #1C1C24">
+<div style="margin-top: 16px; font-size: 20px; font-weight: 500">B&amp;B imports</div>
+<div style="font-size: 15px; color: #B5B5C2"><span class="pt">Identidade visual · Branding</span><span class="en">Visual identity · Branding</span></div>
+</a>
+
+</div>
+</div>
+</sc-if>
+
+<!-- lista tipográfica -->
+
+
+</section>
+
+<!-- SOBRE: painéis com grade -->
+<footer id="contato" style="background: #C9BEFF; color: #0B0B0D">
+<div style="max-width: 1360px; margin: 0 auto; padding: 96px 24px 32px">
+<p style="margin: 0 0 20px; font-size: 13px; letter-spacing: 0.3em"><span class="pt">CONTATO</span><span class="en">CONTACT</span></p>
+<h2 style="margin: 0 0 40px; font-weight: 500; font-size: clamp(40px, 7vw, 104px); line-height: 0.95; letter-spacing: -0.04em; text-transform: uppercase"><span class="pt">Bora criar <em style="font-weight: 300; font-style: italic; text-transform: none">juntos?</em></span><span class="en">Let's create <em style="font-weight: 300; font-style: italic; text-transform: none">together?</em></span></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px"><a href="https://www.linkedin.com/in/luanroinner" style="padding: 18px 28px; background: rgb(11, 11, 13); color: rgb(237, 237, 242); text-decoration: none; font-weight: 500; border-radius: 999px">LinkedIn ↗</a><a href="https://www.behance.net/luanroinner" style="padding: 18px 28px; border: 1.5px solid rgb(11, 11, 13); color: rgb(11, 11, 13); text-decoration: none; font-weight: 500; border-radius: 999px">Behance</a></div>
+<div style="margin-top: 96px; display: flex; align-items: center; gap: 12px">
+<span aria-hidden="true" style="flex: 1; height: 1px; background: rgba(11,11,13,0.4)"></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24"><path d="M12 0 C12.6 8 16 11.4 24 12 C16 12.6 12.6 16 12 24 C11.4 16 8 12.6 0 12 C8 11.4 11.4 8 12 0Z" fill="#0B0B0D"></path></svg>
+<span aria-hidden="true" style="flex: 1; height: 1px; background: rgba(11,11,13,0.4)"></span>
+</div>
+<div style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px">
+<span style="width: 277px; height: 22px">© 2026 Luan Roinner</span>
+<nav aria-label="Rodapé" style="display: flex; flex-wrap: wrap; gap: 20px"><a href="#topo" style="color: rgb(11, 11, 13)"><span class="pt">início</span><span class="en">home</span></a><a href="#projetos" style="color: rgb(11, 11, 13)"><span class="pt">projetos</span><span class="en">work</span></a><a href="#sobre" style="color: rgb(11, 11, 13)"><span class="pt">sobre</span><span class="en">about</span></a></nav>
+<span><span class="pt">Baseado em São Paulo. Online para o mundo.</span><span class="en">Based in São Paulo. Online worldwide.</span></span>
+</div>
+</div>
+</footer>
+
+<!-- CONTATO / RODAPÉ em bloco de cor -->
+
+
+</div>
+</div>
+</template>
+<script src="runtime.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
